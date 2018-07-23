@@ -105,6 +105,7 @@ def get_input_args():
     Returns:
      parse_args() -data structure that stores the command line arguments object
     """
+
     # Creates parse
     parser = argparse.ArgumentParser()
 
@@ -116,8 +117,9 @@ def get_input_args():
     # TODO: 2. EDIT parse.add_argument statements BELOW to add type & help for:
     #          --arch - the CNN model architecture
     #          --dogfile - text file of names of dog breeds
-    parser.add_argument('--arch', default = 'vgg' )
-    parser.add_argument('--dogfile', default = 'dognames.txt', type= )
+    # TYPE MAY NOT BE CORRECT
+    parser.add_argument('--arch', default = 'vgg', type=list, help="the CNN model architecture")
+    parser.add_argument('--dogfile', default = 'dognames.txt', type=str, help= "text file of names of dog breeds" )
 
 
     # returns parsed argument collection
@@ -137,6 +139,7 @@ def get_pet_labels():
      petlabels_dic - Dictionary storing image filename (as key) and Pet Image
                      Labels (as value)
     """
+    in_files = listdir(imagedir)
     pass
 
 
