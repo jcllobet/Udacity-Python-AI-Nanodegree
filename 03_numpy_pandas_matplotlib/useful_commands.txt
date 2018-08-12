@@ -1,0 +1,3 @@
+if conda or jupyter are not id in the current directory
+
+run: export PATH="/home/jan/anaconda3/bin:$PATH"
